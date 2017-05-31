@@ -1,0 +1,9 @@
+{
+  "name": "wp-cpt-templates-plugin",
+  "version": "1.0.0",
+  "description": "Create custom post types with archive and single page support directly from a plugin with optional theme overloading.",
+  "main": "index.php",
+  "repository": "git@github.com:redandbluefi/wp-cpt-templates-plugin.git",
+  "author": "Christian Nikkanen <hi@kisu.li>",
+  "license": "MIT"
+}

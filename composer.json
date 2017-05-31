@@ -1,0 +1,14 @@
+{
+    "name": "redandblue/wp-cpt-templates-plugin",
+    "description": "Create custom post types with archive and single page support directly from a plugin with optional theme overloading.",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Nikkanen",
+            "email": "hi@kisu.li"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
