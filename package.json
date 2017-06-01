@@ -5,5 +5,19 @@
   "main": "index.php",
   "repository": "git@github.com:redandbluefi/wp-cpt-templates-plugin.git",
   "author": "Christian Nikkanen <hi@kisu.li>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "watch:js": "babel src/main.js --watch --out-file dist/bundle.js --source-maps --presets=env",
+    "build:js": "babel src/main.js --out-file dist/bundle.js --presets=env",
+    "watch:css": "stylus -m -l -w src/main.styl -o dist/bundle.css",
+    "build:css": "stylus -c src/main.styl -o dist/bundle.css",
+    "precommit": "npm run build:js && npm run build:css"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "husky": "^0.13.4",
+    "stylus": "^0.54.5"
+  }
 }
